@@ -1,0 +1,25 @@
+{
+  "name": "fe-36_part2",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PavelVar/FE-36_part2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PavelVar/FE-36_part2/issues"
+  },
+  "homepage": "https://github.com/PavelVar/FE-36_part2#readme",
+  "devDependencies": {
+    "parcel": "latest"
+  }
+}
