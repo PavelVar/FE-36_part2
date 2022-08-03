@@ -1,0 +1,42 @@
+@mixin _container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+@mixin _img_position {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin _on_background {
+  position: relative;
+  z-index: 1;
+}
+
+@mixin _h1 {
+  color: $_white;
+  font-size: $_64px;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+}
+
+@mixin _btn {
+  width: 369px;
+  text-transform: uppercase;
+  color: $_white;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  transition: 0.4s;
+  border: none;
+  line-height: 77.58px;
+}
+
+@mixin _btn_norm {
+  @include _btn;
+  background-color: $_pink;
+}

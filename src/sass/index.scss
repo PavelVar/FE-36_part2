@@ -1,3 +1,17 @@
-h1 {
-  color: red;
+@import "../sass/fonts.scss";
+@import "../sass/variables.scss";
+@import "../sass/mixins.scss";
+@import "../sass/1_header.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+  font-size: 100%;
 }
