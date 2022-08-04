@@ -40,3 +40,13 @@
   @include _btn;
   background-color: $_pink;
 }
+
+@mixin _h4 {
+  color: $_black;
+  font-size: $_24px;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  line-height: $_28px;
+  margin-bottom: 20px;
+}

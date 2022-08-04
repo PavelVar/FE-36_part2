@@ -1,0 +1,46 @@
+section {
+  padding: 127px 0px;
+  .container {
+    @include _container;
+    #features-wrap {
+      display: flex;
+      flex-direction: column;
+      #first-line-wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 97px;
+      }
+      #second-line-wrap {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.card {
+  flex-basis: 33.33%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &:hover {
+    box-shadow: 10px 10px 10px 15px $_grey;
+  }
+
+  .card_pic {
+    margin-bottom: 41px;
+    &:hover {
+      box-shadow: 2px 2px 4px 2px $_pink;
+    }
+  }
+  h4 {
+    @include _h4;
+  }
+  .text {
+    color: $_grey;
+    font-size: $_18px;
+    font-weight: 400;
+    text-align: center;
+  }
+}
