@@ -1,0 +1,62 @@
+#team-section {
+  padding: 114px 0;
+  #team-container {
+    @include _container;
+    #team-wrap {
+      display: flex;
+      justify-content: space-between;
+      .team_card {
+        width: 270px;
+        margin: 0 15px;
+        #card-img {
+            width: 100%;
+            margin-bottom: 30px;
+            img {
+              @include _img_position;
+            }
+        }
+        .team-card-name {
+            @include _h4;
+            text-transform: none;
+            font-weight: 700;
+            text-align: left;
+            margin-bottom: 6px;
+          }
+        h5 {
+          color: $_pink;
+          font-size: $_18px;
+          text-transform: uppercase;
+          font-weight: 400;
+          text-align: left;
+          margin-bottom: 18px;
+        }
+        .text {
+          @include _card_text;
+          text-align: left;
+          margin-bottom: 49px;
+        }
+        .icons {
+          width: 45%;
+          display: flex;
+          justify-content: space-between;
+          a {
+            transition: 0.3s;
+            i {
+              font-size: $_24px;
+              color: $_grey;
+            }
+            &:hover {
+              transform: scale(1.2) rotate(360deg);
+              color: cornflowerblue;
+              text-shadow: 10px 2px 2px cornflowerblue;
+            }
+          }
+          
+        }
+        &:hover {box-shadow: 2px 2px 4px 2px $_pink;}
+      }
+      
+      
+    }
+  }
+}

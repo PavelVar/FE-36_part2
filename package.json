@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/PavelVar/FE-36_part2#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2",
     "parcel": "latest"
   }
 }

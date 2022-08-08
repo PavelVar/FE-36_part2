@@ -41,9 +41,7 @@ section {
     @include _h4;
   }
   .text {
-    color: $_grey;
-    font-size: $_18px;
-    font-weight: 400;
+    @include _card_text;
     text-align: center;
   }
 }

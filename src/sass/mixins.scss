@@ -50,3 +50,9 @@
   line-height: $_28px;
   margin-bottom: 20px;
 }
+
+@mixin _card_text {
+  color: $_grey;
+  font-size: $_18px;
+  font-weight: 400;
+}
