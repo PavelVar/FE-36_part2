@@ -41,6 +41,16 @@
   background-color: $_pink;
 }
 
+@mixin _btn_hover {
+  @include _btn_norm;
+  background-color: $_red;
+}
+
+@mixin _btn_active {
+  @include _btn_norm;
+  box-shadow: 4px 4px 30px $_pink;
+}
+
 @mixin _h4 {
   color: $_black;
   font-size: $_24px;

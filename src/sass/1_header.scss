@@ -76,11 +76,10 @@
           display: block;
           margin: 0 auto;
           &:hover {
-            background-color: $_red;
+            @include _btn_hover;
           }
           &:active {
-            background-color: $_pink;
-            box-shadow: 4px 4px 30px $_pink;
+            @include _btn_active;
           }
         }
       }
