@@ -1,0 +1,60 @@
+#bottom-section {
+    padding: 72px 0;
+    background-color: $_blue_bg_bottom;
+    #bottom-container {
+        @include _container;
+        #bottom-wrap {
+            display: flex;
+            justify-content: space-between;
+            color: $_white;
+            #bottom-left-part {
+                @include _bottom_cards;
+                h4 {
+                    @include _bottom_h4;
+                }
+                h5 {
+                    @include _bottom_h5;
+                }
+            }
+            #bottom-center-part {
+                width: 180px;
+                margin: 0 60px;
+                h4 {
+                    @include _bottom_h4;
+                    margin-bottom: $_49px;
+                }
+                #bottom-icons {
+                    width: 165px;
+                    margin: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    font-size: $_18px;
+                    a {
+                        color: $_grey;
+                        transition: 0.3s;
+                        i {
+                            transition: 0.3s;
+                            border: 1px solid $_grey;
+                            width: $_39px;
+                            height: $_39px;
+                        }
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }   
+                }
+            }
+            #bottom-right-part {
+                @include _bottom_cards;
+                h4 {
+                    @include _bottom_h4;
+                }
+                h5 {
+                    @include _bottom_h5;
+                }
+            }
+        }
+    }
+
+}

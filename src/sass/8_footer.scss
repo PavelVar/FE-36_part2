@@ -1,0 +1,16 @@
+footer {
+    padding: 24px 0;
+    background-color: $_deep_blue_bg_footer;
+    #footer-container {
+        @include _container;
+        #footer-wrap {
+            margin: auto;
+            color: $_grey_footer;
+            text-align: center;
+            text-transform: capitalize;
+            p {
+                span {color: $_white;}
+            }
+        }
+    }
+}

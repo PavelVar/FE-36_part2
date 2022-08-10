@@ -40,20 +40,20 @@
           display: flex;
           justify-content: space-between;
           a {
-            transition: 0.3s;
+            transition: 0.4s;
             i {
               font-size: $_24px;
               color: $_grey;
             }
             &:hover {
               transform: scale(1.2) rotate(360deg);
-              color: cornflowerblue;
-              text-shadow: 10px 2px 2px cornflowerblue;
+              color: $_deep_blue_bg_footer;
+              text-shadow: 10px 2px 2px $_blue;
             }
           }
           
         }
-        &:hover {box-shadow: 2px 2px 4px 2px $_pink;}
+        &:hover {box-shadow: 4px 8px 8px $_grey;}
       }
       
       
