@@ -33,11 +33,13 @@
                     a {
                         color: $_grey;
                         transition: 0.3s;
+                        position: relative;
                         i {
-                            transition: 0.3s;
                             border: 1px solid $_grey;
                             width: $_39px;
                             height: $_39px;
+                            position: absolute;
+                            line-height: $_39px;
                         }
                         &:hover {
                             transform: scale(1.2);
