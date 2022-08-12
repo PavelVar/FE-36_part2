@@ -3,30 +3,17 @@
         display: grid;
         grid-template-columns: repeat(4, 378px);
         grid-template-rows: repeat(2, 340px);
-        #work_1 {background-image: 
-            url("../img/3_works_img/work_1.png");
-            @include _img_position;
-            position: relative;
-            h4 {
-                @include _h4_work;
-            }            
-            h5 {
-                @include _h5_work;
-            }
-            &::before {
-                @include _work_cover_before;
-            }
-            &::after {
-                @include _work_cover_after;
-            }
+        #work_1 {
+            background-image: url("../img/3_works_img/work_1.png");
+            @include _works_card;
         } 
-        #work_2 {background-image: url("../img/3_works_img/work_2.png"); @include _img_position;}
-        #work_3 {background-image: url("../img/3_works_img/work_3.png"); @include _img_position;}
-        #work_4 {background-image: url("../img/3_works_img/work_4.png"); @include _img_position;}
-        #work_5 {background-image: url("../img/3_works_img/work_5.png"); @include _img_position;}
-        #work_6 {background-image: url("../img/3_works_img/work_6.png"); @include _img_position;}
-        #work_7 {background-image: url("../img/3_works_img/work_7.png"); @include _img_position;}
-        #work_8 {background-image: url("../img/3_works_img/work_8.png"); @include _img_position;}
+        #work_2 {background-image: url("../img/3_works_img/work_2.png"); @include _works_card;}
+        #work_3 {background-image: url("../img/3_works_img/work_3.png"); @include _works_card;}
+        #work_4 {background-image: url("../img/3_works_img/work_4.png"); @include _works_card;}
+        #work_5 {background-image: url("../img/3_works_img/work_5.png"); @include _works_card;}
+        #work_6 {background-image: url("../img/3_works_img/work_6.png"); @include _works_card;}
+        #work_7 {background-image: url("../img/3_works_img/work_7.png"); @include _works_card;}
+        #work_8 {background-image: url("../img/3_works_img/work_8.png"); @include _works_card;}
         
         &:hover {
             cursor: pointer;

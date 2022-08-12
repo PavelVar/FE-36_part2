@@ -7,6 +7,7 @@
             display: flex;
             justify-content: space-between;
             color: $_white;
+            flex-wrap: wrap;
             #bottom-left-part {
                 @include _bottom_cards;
                 h4 {
@@ -17,29 +18,28 @@
                 }
             }
             #bottom-center-part {
-                width: 180px;
-                margin: 0 60px;
+                @include _bottom_cards;
                 h4 {
                     @include _bottom_h4;
                     margin-bottom: $_49px;
                 }
                 #bottom-icons {
-                    width: 165px;
+                    width: 100%;
                     margin: auto;
-                    display: flex;
-                    justify-content: space-between;
-                    text-align: center;
                     font-size: $_18px;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    
                     a {
+                        margin: auto;
                         color: $_grey;
                         transition: 0.3s;
-                        position: relative;
                         i {
                             border: 1px solid $_grey;
                             width: $_39px;
                             height: $_39px;
-                            position: absolute;
                             line-height: $_39px;
+                            text-align: center;
                         }
                         &:hover {
                             transform: scale(1.2);
