@@ -1,8 +1,8 @@
 #works-section {
     .wrap {
         display: grid;
-        grid-template-columns: repeat(4, 378px);
-        grid-template-rows: repeat(2, 340px);
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(2, 21.25rem);
         #work_1 {
             background-image: url("../img/3_works_img/work_1.png");
             @include _works_card;
