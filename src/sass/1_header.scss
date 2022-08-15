@@ -3,6 +3,7 @@
   @include _img_position;
   position: relative;
   padding: 39px 0px 120px 0px;
+  @media (max-width: 320px) {padding: 21px 0px 52px 0px;}
   &::after {
     content: "";
     background-color: $_blue;
@@ -22,10 +23,21 @@
         @include _on_background;
         border-bottom: 1px solid $_grey;
         margin-bottom: 130px;
+        @media (max-width: 320px) {
+          border-bottom: none;
+          margin-bottom: 70px;
+        }
+        .logo {
+          @media (max-width: 320px) {
+            width: 102px;
+            height: 15px;
+          }
+        }
         .navigation {
           display: flex;
           justify-content: space-around;
           flex-basis: 55%;
+          flex-wrap: wrap;
           a {
             font-size: $_13px;
             font-family: "Raleway", sans-serif;
@@ -56,20 +68,33 @@
             width: 100%;
             background: $_red;
           }
+          @media (max-width: 320px) {
+            display: none;
+          }
+        }
+        .short-menu {
+          display: none;
+          @media (max-width: 320px) {
+            display: block;
+          }
         }
       }
       #header-body-wrap {
         @include _on_background;
         h1 {
           @include _h1;
-          margin-bottom: 31px;
+          margin-bottom: 1.9375rem;
         }
         .text {
           color: $_white;
           font-size: $_24px;
           font-weight: 400;
           text-align: center;
-          margin-bottom: 82px;
+          margin-bottom: 5.125rem;
+          @media (max-width: 1024px) {
+            font-size: $_18px;
+            margin-bottom: 49px;
+          }
         }
         button {
           @include _btn_norm;
@@ -81,6 +106,9 @@
           &:active {
             @include _btn_active;
           }
+        }
+        @media (max-width: 320px) {
+          width: 280px;
         }
       }
     }

@@ -1,5 +1,5 @@
 #bottom-section {
-    padding: 72px 0;
+    padding: 35px 0;
     background-color: $_blue_bg_bottom;
     #bottom-container {
         @include _container;
@@ -8,6 +8,9 @@
             justify-content: space-between;
             color: $_white;
             flex-wrap: wrap;
+            @media (max-width: 320px) {
+                flex-direction: column;
+            }
             #bottom-left-part {
                 @include _bottom_cards;
                 h4 {
@@ -29,6 +32,9 @@
                     font-size: $_18px;
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
+                    @media (max-width: 320px) {
+                        margin-bottom: 60px;
+                      }
                     
                     a {
                         margin: auto;

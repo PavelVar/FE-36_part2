@@ -10,6 +10,9 @@ footer {
             text-transform: capitalize;
             p {
                 span {color: $_white;}
+                @media (max-width: 320px) {
+                    font-size: 14px;
+                  }
             }
         }
     }

@@ -1,10 +1,13 @@
 #team-section {
-  padding: 114px 0;
+  padding: 35px 0;
   #team-container {
     @include _container;
     #team-wrap {
       display: flex;
       justify-content: space-between;
+      &:nth-child(4) {
+        margin-bottom: 0px;
+      }
       .team_card {
         width: 270px;
         margin: 0 15px;
@@ -14,6 +17,9 @@
             img {
               @include _img_position;
             }
+            @media (max-width: 320px) {
+              margin-bottom: 25px;
+            }
         }
         .team-card-name {
             @include _h4;
@@ -21,6 +27,10 @@
             font-weight: 700;
             text-align: left;
             margin-bottom: 6px;
+            @media (max-width: 320px) {
+              font-size: $_18px;
+              margin-bottom: 5px;
+            }
           }
         h5 {
           color: $_pink;
@@ -29,11 +39,21 @@
           font-weight: 400;
           text-align: left;
           margin-bottom: 18px;
+          @media (max-width: 1024px) {
+            font-size: 0.875rem;
+          }
+          @media (max-width: 320px) {
+            font-size: 0.875rem;
+            margin-bottom: 38px;
+          }
         }
         .text {
           @include _card_text;
           text-align: left;
           margin-bottom: 49px;
+          @media (max-width: 320px) {
+            margin-bottom: 55px;
+          }
         }
         .icons {
           width: 45%;
@@ -54,9 +74,19 @@
           
         }
         &:hover {box-shadow: 4px 8px 8px $_grey;}
+        @media (max-width: 320px) {
+          margin-bottom: 50px;
+        }
       }
-      
-      
+      @media (max-width: 320px) {
+        flex-direction: column;
+      }
     }
+  }
+}
+
+@media (max-width) {
+  .team-card {
+    width: 227px;
   }
 }

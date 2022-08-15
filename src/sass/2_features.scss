@@ -1,5 +1,11 @@
 section {
   padding: 127px 0px;
+  @media (max-width: 1024px) {
+    padding: 98px 0px;
+  }
+  @media (max-width: 320px) {
+    padding: 57px 0px;
+  }
   .container {
     @include _container;
     #features-wrap {
@@ -9,17 +15,25 @@ section {
         display: flex;
         justify-content: space-between;
         margin-bottom: 97px;
+        flex-wrap: wrap;
+        @media (max-width: 320px) {
+          flex-direction: column;
+          margin-bottom: 0px;
+        }
       }
       #second-line-wrap {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        @media (max-width: 320px) {
+          flex-direction: column;
+        }
       }
     }
   }
 }
 
 .card {
-  // flex-basis: 33.33%;
   width: 370px;
   padding: 0 15px;
   display: flex;
@@ -29,9 +43,21 @@ section {
     border-radius: 5px;
     box-shadow: 10px 10px 10px 15px $_grey;
   }
+  @media (max-width: 1024px) {
+    width: 315px;
+  }
+  @media (max-width: 320px) {
+    width: 279px;
+  }
 
   .card_pic {
     margin-bottom: 41px;
+    @media (max-width: 1024px) {
+      margin-bottom: 35px;
+    }
+    @media (max-width: 320px) {
+      margin-bottom: 30px;
+    }
     &:hover {
       border-radius: 5px;
       box-shadow: 2px 2px 4px 2px $_pink;
@@ -39,9 +65,25 @@ section {
   }
   h4 {
     @include _h4;
+    @media (max-width: 320px) {
+      margin-bottom: 5px;
+    }
   }
   .text {
     @include _card_text;
     text-align: center;
+    @media (max-width: 320px) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+#second-line-wrap:nth-child(3) {
+  .card_pic {
+    .text {
+      @media (max-width: 320px) {
+        margin-bottom: 0px;
+      }
+    }
   }
 }

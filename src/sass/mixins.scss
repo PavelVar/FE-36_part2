@@ -2,6 +2,13 @@
   max-width: 1170px;
   margin: auto;
   padding: 0 15px;
+  @media (max-width: 1024px) {
+    max-width: 984px;
+  }
+  @media (max-width: 320px) {
+    max-width:300px;
+    padding: 0 5px;
+  }
 }
 
 @mixin _img_position {
@@ -21,19 +28,31 @@
   text-transform: uppercase;
   font-weight: 900;
   text-align: center;
+  @media (max-width: 1024px) {
+    font-size: $_48px;
+  }
+  @media (max-width: 320px) {
+    font-size: $_36px;
+  }
 }
 
 @mixin _btn {
-  width: 23.0625rem;
+  width: 23.125rem;
   text-transform: uppercase;
   color: $_white;
   font-family: "Raleway";
   font-weight: 600;
-  font-size: 0.9375rem;
+  font-size: $_24px;
   cursor: pointer;
   transition: 0.4s;
   border: none;
   line-height: 4.875rem;
+  @media (max-width: 1024px) {
+    width: 19.5625rem;
+  }
+  @media (max-width: 320px) {
+    width: 279px;
+  }
 }
 
 @mixin _btn_norm {
@@ -59,17 +78,30 @@
   text-align: center;
   line-height: $_28px;
   margin-bottom: 1.25rem;
+  @media (max-width: 1024px) {
+    font-size: $_18px;
+  }
+  @media (max-width: 320px) {
+    font-size: 14px;
+  }
 }
 
 @mixin _card_text {
   color: $_grey;
   font-size: $_18px;
   font-weight: 400;
+  @media (max-width: 1024px) {
+    font-size: 0.875rem;
+  }
 }
 
 @mixin _bottom_cards {
   width: 33.33%;
   margin: 0 0.9375rem;
+  @media (max-width: 320px) {
+    width: 280px;
+    margin: auto;
+  }
 }
 
 @mixin _bottom_h4 {
@@ -78,6 +110,10 @@
   font-size: $_18px;
   text-align: center;
   margin-bottom: $_29px;
+  @media (max-width: 320px) {
+    font-size: 0.875rem;
+    margin-bottom: 2.125rem;
+  }
 }
 
 @mixin _bottom_h5 {
@@ -85,6 +121,10 @@
   font-weight: 400;
   font-size: $_18px;
   text-align: center;
+  @media (max-width: 320px) {
+    font-size: 0.875rem;
+    margin-bottom: 1.25rem;
+  }
 }
 
 @mixin _work_cover_before {

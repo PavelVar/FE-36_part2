@@ -1,5 +1,8 @@
 #download-section {
     padding: 114px 0;
+    @media (max-width: 320px) {
+        padding: 34px 0px 45px 0px;
+    }
     #download-container {
       @include _container;
       #download-wrap {
@@ -9,12 +12,21 @@
             text-align: center;
             text-transform: capitalize;
             margin-bottom: 15px;
+            @media (max-width: 320px) {
+                width: 279px;
+                font-size: $_18px;
+            }
         }
         h4 {font-size: $_18px; 
             font-weight: 700; 
             text-align: center;
             text-transform: uppercase;
             margin-bottom: 50px;
+            @media (max-width: 320px) {
+                width: 279px;
+                font-size: $_13px;
+                margin-bottom: 15px;
+            }
         }
         button {
             @include _btn_norm; 

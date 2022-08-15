@@ -1,8 +1,18 @@
 #works-section {
+    @media (max-width: 320px) {
+        padding: 0px;
+    }
     .wrap {
         display: grid;
         grid-template-columns: repeat(4, 25%);
         grid-template-rows: repeat(2, 21.25rem);
+        @media (max-width: 1024px) {
+            grid-template-rows: repeat(2, 14.375rem);
+        }
+        @media (max-width: 320px) {
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: repeat(4, 9rem);
+        }
         #work_1 {
             background-image: url("../img/3_works_img/work_1.png");
             @include _works_card;
