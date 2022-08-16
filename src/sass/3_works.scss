@@ -6,6 +6,7 @@
         display: grid;
         grid-template-columns: repeat(4, 25%);
         grid-template-rows: repeat(2, 21.25rem);
+        grid-column-gap: 2px;
         @media (max-width: 1024px) {
             grid-template-rows: repeat(2, 14.375rem);
         }
