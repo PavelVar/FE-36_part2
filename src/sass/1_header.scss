@@ -28,9 +28,26 @@
           margin-bottom: 70px;
         }
         .logo {
+          font-family: 'Raleway', sans-serif;
+          font-weight:800;
+          font-size: 26px;
+          text-transform: uppercase;
+          margin: 0 15px;
+          color: $_grey;
+          align-self: center;
+          line-height: 50px;
           @media (max-width: 320px) {
-            width: 102px;
-            height: 15px;
+            font-size: 18px;
+          }
+          span{
+            font-weight:200;
+            color: $_white;
+          }
+          .active{
+            height: 25.75px;
+          }
+          .box{
+            height:25.73px;
           }
         }
         .navigation {
@@ -38,7 +55,7 @@
           justify-content: space-around;
           flex-basis: 55%;
           flex-wrap: wrap;
-          line-height: 31px;
+          line-height: 50px;
           a {
             font-size: $_13px;
             font-family: "Raleway", sans-serif;

@@ -25,6 +25,12 @@ section {
         &:nth-child(5),
         &:nth-child(6) {
           margin-bottom: 0;
+          @media (max-width: 320px) {margin-bottom: 45px;}
+        }
+        @media (max-width: 320px) {
+          width: 80%;
+          margin: auto;
+          margin-bottom: 45px;
         }
         &:hover{
           transform: scale(1.05);
@@ -35,6 +41,9 @@ section {
           margin-bottom: 41px;
           @media (max-width: 1024px) {
           margin-bottom: 35px;
+          }
+          @media (max-width: 1024px) {
+            margin-bottom: 15px;
           }
         }
         h4 {

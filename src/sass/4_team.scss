@@ -5,6 +5,7 @@
     #team-wrap {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       &:last-child {
         margin-bottom: 0px;
       }
