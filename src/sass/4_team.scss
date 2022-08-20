@@ -73,7 +73,8 @@
           }
           
         }
-        &:hover {box-shadow: 4px 8px 8px $_grey;}
+        transition: 0.3s;
+        &:hover {transform: scale(1.05);}
         @media (max-width: 320px) {
           margin-bottom: 50px;
         }

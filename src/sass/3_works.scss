@@ -1,33 +1,35 @@
 #works-section {
-    @media (max-width: 320px) {
-        padding: 0px;
-    }
-    .wrap {
-        display: grid;
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: repeat(2, 21.25rem);
-        grid-column-gap: 2px;
-        @media (max-width: 1024px) {
-            grid-template-rows: repeat(2, 14.375rem);
-        }
-        @media (max-width: 320px) {
-            grid-template-columns: repeat(2, 50%);
-            grid-template-rows: repeat(4, 9rem);
-        }
-        #work_1 {
-            background-image: url("../img/3_works_img/work_1.png");
-            @include _works_card;
-        } 
-        #work_2 {background-image: url("../img/3_works_img/work_2.png"); @include _works_card;}
-        #work_3 {background-image: url("../img/3_works_img/work_3.png"); @include _works_card;}
-        #work_4 {background-image: url("../img/3_works_img/work_4.png"); @include _works_card;}
-        #work_5 {background-image: url("../img/3_works_img/work_5.png"); @include _works_card;}
-        #work_6 {background-image: url("../img/3_works_img/work_6.png"); @include _works_card;}
-        #work_7 {background-image: url("../img/3_works_img/work_7.png"); @include _works_card;}
-        #work_8 {background-image: url("../img/3_works_img/work_8.png"); @include _works_card;}
-        
-        &:hover {
-            cursor: pointer;
-        }
-    }
+  @media (max-width: 320px) {
+      padding: 0px;
+  }
+  .wrap {
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      grid-template-rows: repeat(2, 21.25rem);
+      grid-column-gap: 2px;
+      transition: 0.6s;
+      @media (max-width: 1024px) {
+          grid-template-rows: repeat(2, 14.375rem);
+      }
+      @media (max-width: 320px) {
+          grid-template-columns: repeat(2, 50%);
+          grid-template-rows: repeat(4, 9rem);
+      }
+      .work-card {
+        @include _works_card;
+        transition: 0.3s;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+  }
 }
+
+#work_1 {background-image: url("../img/3_works_img/work_1.png");}
+#work_2 {background-image: url("../img/3_works_img/work_2.png");}
+#work_3 {background-image: url("../img/3_works_img/work_3.png");}
+#work_4 {background-image: url("../img/3_works_img/work_4.png");}
+#work_5 {background-image: url("../img/3_works_img/work_5.png");}
+#work_6 {background-image: url("../img/3_works_img/work_6.png");}
+#work_7 {background-image: url("../img/3_works_img/work_7.png");}
+#work_8 {background-image: url("../img/3_works_img/work_8.png");}
